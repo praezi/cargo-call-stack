@@ -113,7 +113,7 @@ fn run() -> Result<i32, failure::Error> {
     let is_binary = matches.is_present("bin");
     let verbose = matches.is_present("verbose");
     let target_flag = matches.value_of("target");
-    let profile = Profile::Release;
+    let profile = Profile::Dev;
 
     let file;
     match (is_example, is_binary) {
